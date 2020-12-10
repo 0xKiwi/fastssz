@@ -328,7 +328,7 @@ func (e *env) print(first bool, order []string) (string, bool, error) {
 	package {{.package}}
 	
 	import (
-		ssz "github.com/ferranbt/fastssz" {{ if .imports }}{{ range $value := .imports }}
+		ssz "github.com/0xkiwi/fastssz" {{ if .imports }}{{ range $value := .imports }}
 			{{ $value }} {{ end }}
 		{{ end }}
 	)
